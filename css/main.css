@@ -1,0 +1,221 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+:root{
+
+}
+body{
+    /* position: relative; */
+    font-family: sans-serif;
+    margin: 80px 0 0 0;
+    padding: 0;
+}
+.container{
+    padding: 0 100px;
+    margin: 0 auto;
+}
+.container_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    position: relative;
+}
+/*********************** MENU ***********************/
+.main_header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 10;
+}
+.logo_container img{
+    display: block;
+    width: 50px;
+}
+.menu_container .main_menu{
+    display: flex;
+    list-style: none;
+}
+.main_menu .main_menu_item{
+    margin-right: 30px;
+}
+.main_menu .main_menu_link{
+    text-decoration: none;
+    color: #000;
+}
+.main_menu .main_menu_link:hover{
+    text-decoration: underline;
+}
+/*********************** Yo ***********************/
+.me_container{
+    margin: 0 auto 30px;
+    text-align: center;
+}
+.me_container .photo_container{
+    display: inline;
+    border: none;
+    width: 200px;
+}
+.me_container .photo_container .photo{
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    width: 200px;
+    /* height: 200px; */
+    margin-right: 50px;
+}
+.me_container .personal_info{
+    display: inline-block;
+    line-height: 10px;
+}
+.personal_info .social_menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social_menu .social_item{
+    display: inline-block;
+    margin-right: 20px;
+}
+.social_menu .social_link{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.social_menu .social_link:hover{
+    border-bottom: 2px solid red;
+}
+/*********************** ARTICULOS ***********************/
+.break_article{
+    /* display: inline-block; */
+    width: 700px;
+    text-align: center;
+    margin: 20px auto;
+    color: black; 
+}
+.section{
+    /* display: inline-block; */
+    width: 1000px;
+    text-align: center;
+    margin: 50px auto;
+    color: black;
+}
+.blog_topics{
+    padding: 10px;
+    width: 70%;
+}
+.blog_card{
+    display: flex;
+}
+.blog_card .img_container .card_img,
+.blog_card .img_container{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.blog_card .img_container .card_img:hover{
+    opacity: 0.7;
+}
+.blog_card_content{
+    display: inline-block;
+    margin-left: 30px;
+}
+.blog_card_content .blog_card_footer .card_user{
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+}
+.blog_card_content .blog_card_title .blog_card_title_link{
+    margin-top: 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+.blog_card_content .blog_card_title .blog_card_title_link:hover{
+    text-decoration: underline;
+}
+.blog_card_publish_data_date,
+.blog_card_publish_data_time{
+    display: inline-block;
+    margin-right: 20px;
+    color: gray;
+}
+.blog_card_publish_data_time{
+    border-left: 1px solid gray;
+    padding-left: 20px;
+}
+/*********************** ASIDE ***********************/
+.break_aside{
+    /* display: inline-block; */
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+}
+.main_aside{
+    display: inline-block;
+    width: 25%;
+    border-left: 1px solid #c0c0c0;
+    padding: 0 10px;
+}
+.main_aside .aside_title{
+    text-align: center;
+    margin: 0 0 10px;
+}
+.aside_card .aside_card_img_container,
+.aside_card .aside_card_title{
+    display: inline-block;
+    margin: 0;
+}
+.aside_card .aside_card_img_container .aside_card_img{
+    width: 100px;
+}
+.aside_card .aside_card_img_container .aside_card_img:hover{
+    opacity: 0.7;
+}
+.aside_card .aside_card_title{
+    font-size: 1rem;
+}
+.aside_card .aside_card_title a{
+    color: #000;
+    text-decoration: none;
+}
+.aside_card .aside_card_title a:hover{
+    text-decoration: underline;
+}
+/*********************** FOOTER ***********************/
+.main_footer{
+    margin-top: 50px;
+    background-color: gray;
+}
+.main_footer .form_container{
+    width: 50%;
+}
+.main_footer .form_container .form_title{
+    text-align: center;
+}
+.main_footer .form_container .contact_form{
+    display: flex;
+    flex-direction: column;
+}
+.main_footer .form_container input{
+    width: 50%;
+    margin-bottom: 10px;
+}
+input.form_submit{
+    margin: 10px auto;
+}
+/*********** SOCIAL ***********/
+.social_container{
+    width: 50%;
+    text-align: center;
+}
+/*********** SMALL ***********/
+p.copy{
+    margin: 10px auto 0;
+    text-align: center;
+    font-weight: bold;
+}
